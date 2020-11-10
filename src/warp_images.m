@@ -10,7 +10,7 @@ job.out{1}.pull.interp = interp;
 job.out{1}.pull.mask = 0;
 job.out{1}.pull.fwhm = [0 0 0];
 
-[~,n,e] = fileparts(image_file);
+[~,n,e] = fileparts(seg_nii);
 wseg_nii = fullfile(out_dir,['w' n e]);
 
 spm_deformations(job);

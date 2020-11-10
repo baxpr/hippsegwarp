@@ -1,7 +1,5 @@
 function hippsegwarp_main(inp)
 
-% Inputs are the parser results structure from connprep.m
-
 
 %% SPM init
 spm_jobman('initcfg')
@@ -22,7 +20,7 @@ wseg_nii = warp_images(seg_nii,deffwd_nii,mnigeom_nii,0,inp.out_dir);
 
 
 %% Make output PDF
-make_pdf(inp.out_dir,inp.magick_path);
+% Show warped seg on BIAS_NORM and on mnigeom atlas
 
 
 %% Zip output images
