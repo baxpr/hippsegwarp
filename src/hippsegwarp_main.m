@@ -20,7 +20,7 @@ wseg_nii = warp_images(seg_nii,deffwd_nii,mnigeom_nii,0,inp.out_dir);
 
 
 %% Make output PDF
-% Show warped seg on BIAS_NORM and on mnigeom atlas
+% Show warped seg on BIAS_NORM and on mnigeom atlas, hippocampus COM
 
 
 %% Zip output images
