@@ -17,5 +17,7 @@ spm_deformations(job);
 [~,n,e] = fileparts(seg_nii);
 wseg_nii = fullfile(out_dir,['w' n e]);
 out_nii = fullfile(out_dir,'wseg.nii');
-movefile(wseg_nii,out_nii);
-wseg_nii = out_nii;
+if ~strcmp(wseg_nii,out_nii)
+	movefile(wseg_nii,out_nii);
+	wseg_nii = out_nii;
+end
