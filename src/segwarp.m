@@ -1,4 +1,4 @@
-function hippsegwarp(varargin)
+function segwarp(varargin)
 
 
 %% Parse inputs
@@ -35,5 +35,5 @@ addOptional(P,'immag_dir','/usr/bin');
 parse(P,varargin{:});
 disp(P.Results)
 
-hippsegwarp_main(P.Results)
+segwarp_main(P.Results)
 

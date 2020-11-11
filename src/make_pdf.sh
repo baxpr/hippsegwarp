@@ -41,5 +41,5 @@ ${IMMAGDIR}/convert \
 "Segmentation warped to atlas space" \
 -gravity SouthEast -pointsize 48 -annotate +100+100 "$(date)" \
 -gravity NorthWest -pointsize 48 -annotate +100+200 "${info_string}" \
-hippsegwarp.pdf
+segwarp.pdf
 

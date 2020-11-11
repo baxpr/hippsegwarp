@@ -1,4 +1,4 @@
-function hippsegwarp_main(inp)
+function segwarp_main(inp)
 
 
 %% SPM init
